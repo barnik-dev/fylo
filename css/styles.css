@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /* Primary Colors */
+  --hero-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonial-bg: hsl(219, 30%, 18%);
+
+  /* Accent Colors */
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --error-bg: hsl(0, 100%, 63%);
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--main-bg);
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--hero-bg);
+  padding-top: 3em;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar .logo {
+  width: 12%;
+}
+
+.navbar li {
+  margin: 0 1.7em;
+}
+
+.navbar a {
+  opacity: 80%;
+}
+
+.navbar a:hover {
+  opacity: 100%;
+  font-weight: 700;
+  border-bottom: 1px solid white;
+}
+
+/* Hero */
+.hero {
+  background-color: var(--hero-bg);
+  text-align: center;
+  color: white;
+  padding: 3em 0 13em;
+  position: relative;
+}
+
+.hero .hero-img {
+  width: 50%;
+}
+
+.hero h1 {
+  font-size: 2em;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  opacity: 80%;
+  line-height: 1.6;
+  margin-bottom: 2.4em;
+  max-width: 510px;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.hero .curve {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 580px;
+  min-height: fit-content;
+}
+
+.hero .curve-m {
+  display: none;
+}
+
+.hero .cta {
+  position: relative;
+  top: 50px;
+}
+
+/* Features */
+.feature {
+  margin-top: 3em;
+  text-align: center;
+  color: white;
+}
+
+.feature .grid {
+  row-gap: 4em;
+  column-gap: 0;
+}
+
+.feat h3 {
+  margin-bottom: 0.6em;
+}
+
+.feat p {
+  font-size: 0.9em;
+  opacity: 85%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* About Fylo */
+.fylo {
+  margin-top: 8em;
+  color: white;
+}
+
+.fylo .container.grid {
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  justify-content: space-between;
+}
+
+.left-col img {
+  width: 100%;
+}
+
+.right-col h1 {
+  font-size: 2.4em;
+  line-height: 1.3;
+  margin-bottom: 0;
+  max-width: 400px;
+}
+
+.right-col p {
+  font-size: 0.9em;
+  opacity: 85%;
+  max-width: 450px;
+}
+
+.right-col .para {
+  margin-bottom: 2em;
+}
+
+.right-col a {
+  font-size: 0.9em;
+  color: var(--cyan);
+  position: relative;
+}
+
+.right-col a:hover {
+  color: white;
+  opacity: 85%;
+}
+
+.right-col a .underline {
+  display: block;
+  position: absolute;
+  top: 22px;
+  width: 154px;
+  height: 2px;
+  background-color: var(--cyan);
+}
+
+.right-col a .ico {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 137px;
+  top: 0;
+}
+
+/* Testimonial */
+.testimonial {
+  margin-top: 10em;
+  color: white;
+  padding-bottom: 20em;
+}
+
+.testimonial .container {
+  position: relative;
+}
+
+.testimonial .quote {
+  position: absolute;
+  left: 32px;
+  top: -34px;
+}
+
+.testimonial .grid {
+  gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.testimonial .verdicts > div {
+  background-color: var(--testimonial-bg);
+  padding: 2em 2em 1em;
+  box-shadow: 4px 4px 4px var(--hero-bg);
+}
+
+.testimonial p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.testimonial .verdicts img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.testimonial .person {
+  margin-top: 0;
+}
+
+.person.flex {
+  justify-content: start;
+}
+
+.testimonial h3 {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  margin-left: 0.8em;
+  margin-bottom: 0;
+}
+
+.testimonial .designation {
+  font-size: 0.6em;
+  opacity: 80%;
+  margin-top: 0.2em;
+  margin-left: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  padding-top: 10em;
+  padding-bottom: 3em;
+  position: relative;
+}
+
+.grid > div {
+  opacity: 80%;
+}
+
+footer .logo {
+  width: 12%;
+}
+
+footer .grid {
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+
+footer .flex {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer p {
+  font-size: 0.9em;
+  margin-left: 1.3em;
+  margin-top: 0;
+}
+
+.item1,
+.item2,
+.item5 {
+  margin-top: 16px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+}
+
+.item1 .location {
+  margin-top: 5px;
+}
+
+.item2 {
+  justify-self: flex-end;
+}
+
+.item2 .email {
+  margin-top: 2px;
+}
+
+.item2 .flex {
+  justify-content: start;
+}
+
+.item3 {
+  justify-self: end;
+}
+
+.item5 {
+  justify-self: end;
+}
+
+.item5 a {
+  padding: 0 0.5em;
+}
+
+.item5 a:hover {
+  color: var(--cyan);
+}
+
+footer li {
+  margin-bottom: 1em;
+}
+
+footer .attribution {
+  opacity: 70%;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.attribution span {
+  color: var(--cyan);
+}
+
+/* Join Prompt */
+.join {
+  background-color: var(--hero-bg);
+  position: absolute;
+  z-index: 1;
+  padding: 2em 2em 3em;
+  max-width: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -170px;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.join p {
+  opacity: 80%;
+  margin: 2em 0;
+}
+
+footer .join .grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+  margin-top: 3em;
+}
+
+.join input[type="email"] {
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: 50px;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  grid-column: 1 / span 2;
+  box-sizing: border-box;
+}
+
+.join input[type="email"]:focus {
+  outline: none;
+}
+
+.join .error {
+  text-align: left;
+  margin-top: 0.6em;
+  margin-left: 2em;
+  font-size: 0.8em;
+  color: var(--error-bg);
+  font-weight: 700;
+  display: none;
+  position: absolute;
+}
+
+.join .btn {
+  border: none;
+  color: white;
+  padding: 1em 1.8em;
+  margin-left: 2em;
+}
+
+/* Reusable Classes */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2.5em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background-color: var(--blue);
+  padding: 1em 5em;
+  font-size: 0.9em;
+  border-radius: 55px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+  background-color: var(--cyan);
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4em;
+}
+
+/* Tablets and below */
+@media only screen and (max-width: 768px) {
+  /* Feature */
+  .feature .container {
+    display: block;
+  }
+
+  .feature .feat {
+    margin: 5em 0;
+  }
+
+  /* About Fylo */
+  .left-col img {
+    width: 80%;
+  }
+
+  /* Join Prompt */
+  .join {
+    width: 80%;
+  }
+
+  /* Footer */
+  footer .container {
+    margin-top: 2em;
+  }
+
+  footer .container .logo {
+    width: 25%;
+  }
+
+  .item.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item3,
+  .item4,
+  .item5 {
+    justify-self: start;
+  }
+}
+
+/* Mobile and below */
+@media only screen and (max-width: 532px) {
+  /* Navbar */
+  .navbar .logo {
+    width: 30%;
+  }
+
+  .navbar li {
+    margin: 0 0.5em;
+  }
+
+  /* Hero */
+  .hero {
+    padding-bottom: 5.4em;
+  }
+
+  .hero .hero-img {
+    width: 100%;
+  }
+
+  .hero .cta {
+    padding: 1.4em 6em;
+  }
+
+  .hero .curve {
+    display: none;
+  }
+
+  .hero .curve-m {
+    display: block;
+    position: absolute;
+    width: fit-content;
+    right: 0;
+    top: 580px;
+  }
+
+  /* About Fylo */
+  .right-col h1 {
+    font-size: 1.5em;
+  }
+
+  .right-col p {
+    margin-top: 2em;
+  }
+
+  /* Join Prompt */
+  .join {
+    top: -250px;
+    width: 80%;
+  }
+
+  .join .grid {
+    display: block;
+  }
+
+  .join .btn {
+    margin: 2em auto 0;
+  }
+
+  /* Footer */
+  .item.grid {
+    display: block;
+  }
+
+  footer .container .logo {
+    width: 50%;
+    margin: 2em 0;
+  }
+
+  .item3 {
+    margin: 3em 0;
+  }
+
+  .item5 {
+    text-align: center;
+    margin-top: 3em;
+  }
+}
+
+/* V.Small screen and below */
+@media only screen and (max-width: 380px) {
+  /* Navbar */
+  .navbar .logo {
+    width: 20%;
+  }
+
+  .navbar li {
+    margin: 0 0.3em;
+  }
+
+  .navbar a {
+    font-size: 0.8em;
+  }
+
+  /* Join Prompt */
+  .join {
+    width: 70%;
+  }
+
+  .join input[type="email"] {
+    width: 90%;
+  }
+
+  .join .btn {
+    width: 90%;
+  }
+
+  /* Footer */
+  footer .container .logo {
+    margin: 4em 0 2em;
+  }
+}
